@@ -3,19 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyPortfolio</title>
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Source+Serif+4:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
+    <header class="header">
+        <div class="logo">MyPortfolio</div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    </nav>
     <main>
-        <h1>Explore My Portfolio</h1>
-    </main>
-    <footer>
-        
-    </footer>
-    
+        <section class="hero">
+            <h1>Explore My Portfolio</h1>
+            <img src="media/image1.png" alt="Hero Background" class="hero-image">
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="project" style="background-image: url(media/image2.png)">
+                <h3>Project Alpha</h3>
+                <p>Web Design</p>
+            </div>
+            <div class="project" style="background-image: url(media/image3.png)">
+                <h3>Project Beta</h3>
+                <p>Graphic Design</p>
+            </div>
+            <div class="project" style="background-image: url(media/image4.png)">
+                <h3>Project Gamma</h3>
+                <p>App Development</p>
+            </div>
+            <div class="project" style="background-image: url(media/image5.png)">
+                <h3>Project Delta</h3>
+                <p>Branding</p>
+            </div>
+            <div class="project" style="background-image: url(media/image6.png)">
+                <h3>Project Epsilon</h3>
+                <p>Illustration</p>
+            </div>
+            <div class="project" style="background-image: url(media/image7.png)">
+                <h3>Project Zeta</h3>
+                <p>Photography</p>
+            </div>
+            <div class="project" style="background-image: url(media/image8.png)">
+                <h3>Project Eta</h3>
+                <p>Motion Graphics</p>
+            </div>
+            <div class="project" style="background-image: url(media/image9.png)">
+                <h3>Project Theta</h3>
+                <p>UI/UX Design</p>
+            </div>
+            <div class="project" style="background-image: url(media/image10.png)">
+                <h3>Project Iota</h3>
+                <p>3D Modeling</p>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <p>I am a passionate designer with a focus on creating visually stunning and user-friendly experiences. My work spans various disciplines including web design, graphic design, and app development.</p>
+        </section>
+
+        <section class="services">
+            <h2>What I Do</h2>
+            <ul>
+                <li>Web Design</li>
+                <li>App Development</li>
+                <li>Illustration</li>
+                <li>Motion Graphics</li>
+                <li>3D Modeling</li>
+                <li>Graphic Design</li>
+                <li>Branding</li>
+                <li>Photography</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Clients Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <div class="profile">
+                        <img src="client/image1.png" alt="Alaric Montague">
+                        <div>
+                            <h3>Alaric Montague</h3>
+                            <p>CEO, TechCorp</p>
+                        </div>
+                    </div>
+                    <p class="quote">Amazing work! Highly recommended.</p>
+                </div>
+                <div class="testimonial">
+                    <div class="profile">
+                        <img src="client/image2.png" alt="Beatrix Larkspur">
+                        <div>
+                            <h3>Beatrix Larkspur</h3>
+                            <p>Creative Director, DesignHub</p>
+                        </div>
+                    </div>
+                    <p class="quote">A true professional with a keen eye for design.</p>
+                </div>
+                <div class="testimonial">
+                    <div class="profile">
+                        <img src="client/image3.png" alt="Caspian Thorne">
+                        <div>
+                            <h3>Caspian Thorne</h3>
+                            <p>Founder, InnovateX</p>
+                        </div>
+                    </div>
+                    <p class="quote">Delivered beyond expectations.</p>
+                </div>
+                <div class="testimonial">
+                    <div class="profile">
+                        <img src="client/image4.png" alt="Daphne Wren">
+                        <div>
+                            <h3>Daphne Wren</h3>
+                            <p>Marketing Manager, BrandWave</p>
+                        </div>
+                    </div>
+                    <p class="quote">Exceptional quality and attention to detail.</p>
+                </div>
+            </div>
+            <footer class="footer">
+                <p>&copy; 2023 MyPortfolio</p>
+                <button class="contact-btn">Contact Me</button>
+            </footer>
+        </section>
 </body>
 </html>
