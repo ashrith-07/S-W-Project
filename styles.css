@@ -1,234 +1,440 @@
-
-* {
+html{
+    scroll-behavior: smooth;
+}
+body{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    width: 100%;
 }
-
-body {
-    font-family: 'Outfit', sans-serif;
-    background-color: #FBFDFE;
-    color: #333;
-    line-height: 1.6;
+#main{
+    height: 100%;
+    width: 100%;
 }
-
-
-.header {
+nav{
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    font-family: 'DotGothic16';
     align-items: center;
-    padding: 20px 50px;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
 }
-
-.logo {
-    font-family: 'Source Serif 4', serif;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.nav a {
+nav h2 a{
     text-decoration: none;
-    color: #333;
-    margin-left: 20px;
-    font-weight: 600;
-    transition: color 0.3s;
+    color: black;
+    font-size: 5vh;
+    font-weight: 10;
+    padding-left: 4vh;
 }
-
-.nav a:hover {
-    color: #007BFF;
+nav h4{
+    font-weight: 10;
+    font-size: 3vh;
 }
-
-.hero {
-    text-align: center;
-    padding: 50px 20px;
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vw;
+    padding-right: 4vh;
 }
-
-.hero h1 {
-    font-size: 6.5em;
-    margin-bottom: 20px;
-}
-
-.hero-image {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-
-.projects {
-    padding: 50px 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.project {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.main1{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 20px;
-    color: white;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    align-items: center;
 }
-
-.project h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
-
-.project p {
-    font-size: 0.9em;
-}
-
-
-.about {
+.main1 h1{
+    padding-top: 5vh;
+    font-family: 'DotGothic16';
     text-align: center;
-    padding: 50px 20px;
+    margin-bottom: 0;
+    font-size: 13vh;
+    font-weight: 10;
+}
+.portflex{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio{
+    border-radius: 10vh;
+    width: 90%;
+}
+#projects{
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    overflow-x: auto;
+    width: 100%;
+    display: grid;
+    justify-content:center;
+    grid-template-columns: repeat(3,33vw);
+    grid-template-rows: repeat(3,1fr);
+}
+#projects > *:nth-child(1) {
+    justify-self: start;
+}
+#projects > *:nth-child(4) {
+    justify-self: start;
+}
+#projects > *:nth-child(7) {
+    justify-self: start;
+}
+#projects > *:nth-child(2) {
+    justify-self: center;
+}
+#projects > *:nth-child(5) {
+    justify-self: center;
+}
+#projects > *:nth-child(8) {
+    justify-self: center;
 }
 
-.about p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 2.7em;
+#projects > *:nth-child(3) {
+    justify-self: end;
 }
-
-
-.services {
-    padding: 50px 20px;
+#projects > *:nth-child(6) {
+    justify-self: end;
+}
+#projects > *:nth-child(9) {
+    justify-self: end;
+}
+#projects img{
+    width: 29vw;
+    height: 17vw;
+}
+#projects figcaption{
+    font-family: 'Archivo';
+    line-height: 3vh;
+    font-size: 1vw;
+}
+#flexabout-a{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DotGothic16';
+    font-size: 5vh;
+    text-align: center;
+    font-weight: 10;
+}
+.flexabout-b{
+    margin:10vh 0;
+    padding: 0;
     background-color: white;
-    text-align: center;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.services h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.services ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.services li {
-    padding: 10px 20px;
-    background-color: #F7F9FA;
-    border-radius: 20px;
-    font-weight: 600;
-}
-
-
-.testimonials {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #FBFDFE;
-}
-
-.testimonials h2 {
-    font-family: 'Source Serif 4', serif;
-    font-size: 2em;
-    margin-bottom: 30px;
-}
-
-.testimonial-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    align-items: center;
 }
 
-.testimonial {
-    background-color: #EAF5F7;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 250px;
-    flex: 1;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 60vh; /* Adjust spacing between the columns */
     text-align: left;
 }
 
-.profile {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
+.left-column h1 {
+    font-size: 5vh;
+    font-weight: 10;
+    margin: 0;
+    line-height: 1.5;
 }
 
-.profile img {
-    width: 50px;
-    height: 50px;
+.right-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10vh;
+}
+
+.right-column div {
+    font-size: 3vh;
+    color: #666;
+    font-weight: 10;
+    line-height: 1.8;
+}
+.clients{
+    text-align: center;
+    font-weight: 100;
+    font-family: 'DotGothic16';
+    font-size: 5vh;
+    padding:10vh 0 ;
+    width: 90%;
+}
+.profiles{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+}
+.card{
+    padding: 2vh;
+}
+
+.testimonial-card {
+    width:30vh;
+    height: auto;
+    display: flex;
+    border: 0.2vh solid black;
+    border-radius: 1.2vh;
+    padding: 2vh;
+    background-color: #fff;
+    box-shadow: 0 0.2vh 1vh rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 6vh;
+    height: 6vh;
     border-radius: 50%;
+    overflow: hidden;
+    margin-right: 2vh;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-.profile h3 {
-    font-size: 1em;
-    margin: 0;
-    font-weight: bold;
+.testimonial-content {
+    flex: 1;
 }
 
-.profile p {
-    font-size: 0.9em;
+.name {
+    font-weight: 800;
+    font-family: 'Archivo';
+    font-size: 2.4vh;
     margin: 0;
+}
+
+.designation {
     color: #666;
+    font-size: 1.8vh;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Archivo';
+    margin-bottom: 1vh;
 }
 
-.quote {
-    font-size: 0.95em;
-    font-style: italic;
+.testimonial-text {
+    text-align: start;
+    margin-left: -4vw;
+    font-size: 2vh;
     color: #333;
-    margin: 10px 0 0;
+    line-height: 2.5vh;
+    font-weight: 400;
+    font-family: 'Archivo';
+    padding-left: 1vh;
 }
-
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    margin-top: 30px;
+#footer{
+    align-items: end;
+    padding-top: 15vh;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
 }
-
-.footer p {
-    margin-bottom: 10px;
-    font-size: 0.9em;
-    color: #666;
+.copyrigth{
+    padding-left: 5vh;
 }
-
-.contact-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: 1px solid #007BFF;
-    border-radius: 5px;
-    background-color: white;
-    color: #007BFF;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+.copyrigth h2{
+    font-family: 'DotGothic16';
+    font-weight: 10;
+    font-size: 3.5vh;
 }
-
-.contact-btn:hover {
-    background-color: #007BFF;
-    color: white;
+#contact{
+    padding-right:5vh ;
+    font-family: 'Archivo';
+    border-radius: 1vh;
+    font-weight: 100;
+    border: 1px solid black;
+    transition: background-color 2s,color 2s, border 2s, width 2s,height 2s;
+    margin-bottom: 5vh;
 }
+#contact h3{
+    padding-left: 4vh;
+}
+/* Add these media queries at the end of your existing CSS */
 
-
-@media (max-width: 768px) {
-    .testimonial-container {
-        flex-direction: column;
-        align-items: center;
+@media screen and (max-width: 1200px) {
+    #projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vh;
+        padding: 5vh 5vw;
     }
 
-    .testimonial {
-        max-width: 100%;
+    #projects img {
+        width: 42vw;
+        height: 30vw;
+    }
+
+    #projects figcaption {
+        font-size: 1.8vw;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 5vh;
+        padding: 0 5vw;
+    }
+
+    .right-column {
+        grid-template-columns: 1fr 1fr;
+        gap: 3vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        height: auto;
+        padding: 3vh 4vh;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    nav h2 a {
+        padding-left: 0;
+        font-size: 4vh;
+    }
+
+    .links {
+        padding-right: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .main1 h1 {
+        font-size: 8vh;
+        padding-top: 3vh;
+    }
+
+    .portfolio {
+        width: 95%;
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+        padding: 5vh 3vw;
+    }
+
+    #projects img {
+        width: 90vw;
+        height: 60vw;
+    }
+
+    #projects figcaption {
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    #projects > *:nth-child(n) {
+        justify-self: center;
+    }
+
+    .right-column {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .left-column h1 {
+        text-align: center;
+    }
+
+    #flexabout-a {
+        font-size: 4vh;
+        padding: 0 3vw;
+    }
+
+    .profiles {
+        padding: 0 3vw;
+    }
+
+    .testimonial-card {
+        width: 80vw;
+    }
+
+    .testimonial-text {
+        font-size: 2vh;
+        margin-left: 0;
+        padding-left: 2vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 2vh;
+    }
+
+    nav h2 a {
+        font-size: 3.5vh;
+    }
+
+    nav h4 {
+        font-size: 2vh;
+    }
+
+    .links {
+        gap: 1.5vh;
+        align-items: flex-start;
+    }
+
+    .main1 h1 {
+        font-size: 6vh;
+    }
+
+    #flexabout-a {
+        font-size: 3vh;
+    }
+
+    .container {
+        padding: 0 3vw;
+    }
+
+    .left-column h1 {
+        font-size: 3.5vh;
+    }
+
+    .right-column div {
+        font-size: 2.5vh;
+        line-height: 1.5;
+    }
+
+    .clients {
+        font-size: 3.5vh;
+        padding: 5vh 0;
+    }
+
+    .testimonial-card {
+        width: 85vw;
+    }
+
+    #projects figcaption {
+        font-size: 3.5vw;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 5vh;
+    }
+
+    .copyrigth {
+        padding-left: 0;
+    }
+
+    .copyrigth h2 {
+        font-size: 2.8vh;
+    }
+
+    #contact {
+        padding: 2vh;
+        margin: 3vh 0;
+    }
+}
+
+/* Optional: Add smooth transitions for responsive changes */
+@media screen and (min-width: 769px) {
+    nav, .links, #projects, .container, .right-column {
+        transition: all 0.3s ease-in-out;
     }
 }
