@@ -13,7 +13,6 @@ nav{
     display: flex;
     width: 100%;
     height: 10vh;
-    font-family: 'DotGothic16';
     align-items: center;
     justify-content: space-between;
 }
@@ -43,7 +42,6 @@ nav h4{
 }
 .main1 h1{
     padding-top: 5vh;
-    font-family: 'DotGothic16';
     text-align: center;
     margin-bottom: 0;
     font-size: 13vh;
@@ -111,7 +109,6 @@ nav h4{
     width: 90%;
     justify-content: center;
     align-items: center;
-    font-family: 'DotGothic16';
     font-size: 5vh;
     text-align: center;
     font-weight: 10;
@@ -154,7 +151,6 @@ nav h4{
 .clients{
     text-align: center;
     font-weight: 100;
-    font-family: 'DotGothic16';
     font-size: 5vh;
     padding:10vh 0 ;
     width: 90%;
@@ -237,7 +233,6 @@ nav h4{
     padding-left: 5vh;
 }
 .copyrigth h2{
-    font-family: 'DotGothic16';
     font-weight: 10;
     font-size: 3.5vh;
 }
